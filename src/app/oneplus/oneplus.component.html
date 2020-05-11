@@ -1,0 +1,35 @@
+<div class="row">
+
+  <div class="col-sm-4 " *ngFor="let p of OnePlusPhones">
+    <div class="card mb-3 mt-4 ml-5" style="width: 18rem;">
+      <div class="card-block  text-center"><i class="text-dark"><b>Add to Cart : </b></i>
+        <input type="checkbox" (click)="addPhone(p)" (change)="addResult()">
+        <img class="card-img-top" src="{{p.img}}" alt="phone">
+        <h4 class="card-title"> {{p.name}}</h4>
+        <p class="card-text">Description : {{p.description}}</p>
+        QUANTITY :
+        <input class="mb-3 text-center" type="number" min="1" max="10" [(ngModel)]=p.quantity (change)="addResult()">
+        <p class="card-text card-footer "><small class="text-muted">Price : {{p.price}}₹</small></p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+<table class="table table-dark table-bordered">
+  <tr>
+      <th>S.NO#</th>
+      <th>ITEM NAME</th>
+      <th>ITEM PRICE</th>
+      <th>ITEM QUANTITY</th>
+      <th>ITEM TOTAL</th>
+  </tr>
+  <tr *ngFor="let p of phones;let i =index">
+      <td>{{i+1}}</td>
+      <td>{{p.name}}</td>
+      <td>{{p.price}}</td>
+      <td>{{p.quantity}}</td>
+      <td>{{p.quantity*p.price}}</td>
+  </tr>
+</table>
+</div>
+<h3 class="text-center border border-dark bg-dark text-white">Total Amount : {{result}}</h3>

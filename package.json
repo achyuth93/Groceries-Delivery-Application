@@ -1,5 +1,5 @@
 {
-  "name": "groceries-app",
+  "name": "product-gallery",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -19,6 +19,12 @@
     "@angular/platform-browser": "~9.0.6",
     "@angular/platform-browser-dynamic": "~9.0.6",
     "@angular/router": "~9.0.6",
+    "bootstrap": "^4.4.1",
+    "chart.js": "^2.9.3",
+    "ng2-search-filter": "^0.5.1",
+    "ngx-bootstrap": "^5.5.0",
+    "ngx-order-pipe": "^2.0.4",
+    "ngx-pagination": "^5.0.0",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"

@@ -1,0 +1,74 @@
+<div class="container text-center mt-3" style="width: 38rem;">
+  <h4 class="text-primary"> <strong>ADD NEW PRODUCT</strong></h4>
+  <div class="card shadow">
+    <div class="card-body">
+      <form #addProForm="ngForm" (ngSubmit)="addProduct(addProForm)">
+        <div class="form-group">
+          <input
+            type="hidden"
+            #pid="ngModel"
+            name="id"
+            class="form-control"
+            ngModel
+          />
+        </div>
+        <div class="form-group">
+          <label>Select Product Category</label>
+          <select name="category" class="form-control" ngModel required>
+            <option value="">Select Product</option>
+            <option [value]="product" *ngFor="let product of products">{{
+              product
+            }}</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Product name</label>
+          <input
+            type="text"
+            class="form-control"
+            #pname="ngModel"
+            name="name"
+            ngModel
+            required
+          />
+        </div>
+        <div class="alert alert-danger " *ngIf="pname.invalid && pname.touched">
+          Please Enter product name
+        </div>
+        <div class="form-group">
+          <label>Product Description</label>
+          <textarea
+            name="description"
+            rows="3"
+            class="form-control"
+            ngModel
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label>Product price</label>
+          <input
+            type="number"
+            name="price"
+            #price="ngModel"
+            class="form-control"
+            ngModel
+            required
+          />
+        </div>
+        <div class="alert alert-danger " *ngIf="price.invalid && price.touched">
+          <div *ngIf="price.errors.required">Please Enter price</div>
+          <div *ngIf="price.errors.pattern">Price must be a non negative number</div>
+
+        </div>
+        <button
+          class="btn btn-outline-success btn-sm"
+          type="submit"
+          [disabled]="!addProForm.valid"
+        >
+          Save
+        </button> |
+        <button type="button" class="btn btn-outline-danger btn-sm" routerLink="/products">Back</button>
+      </form>
+    </div>
+  </div>
+</div>

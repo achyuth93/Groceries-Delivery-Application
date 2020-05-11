@@ -1,0 +1,25 @@
+{
+  "users": [
+    {
+      "uname": "achyuth",
+      "uemail": "achyuth12693@gmail.com",
+      "upwd": "achyuth_12693",
+      "ucpwd": "achyuth_12693",
+      "id": 1
+    },
+    {
+      "uname": "achu",
+      "uemail": "achu@gmail.com",
+      "upwd": "achu123",
+      "ucpwd": "achu123",
+      "id": 2
+    },
+    {
+      "uname": "chichu",
+      "uemail": "chichu@gmail.com",
+      "upwd": "chichu123",
+      "ucpwd": "chichu123",
+      "id": 3
+    }
+  ]
+}

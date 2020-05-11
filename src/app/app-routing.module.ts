@@ -1,8 +1,23 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { CommonModule } from '@angular/common';
+import { Route } from '@angular/compiler/src/core';
+import { RouterModule, Routes } from '@angular/router';
 
-
-const routes: Routes = [];
+const routes:Routes=[
+//   {
+// path:'',component:SignupComponent
+//   },
+//   {
+// path:'management',component:ProductManagementComponent,
+// children:[
+//   {path:'addproduct',component:EditProductComponent}
+// ]
+//   },
+  {
+    path:'',
+    loadChildren: () => import('../app/product-crud/product-crud.module').then( m => m.ProductCrudModule)
+  }
+]
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

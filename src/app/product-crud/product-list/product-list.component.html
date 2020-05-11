@@ -1,0 +1,77 @@
+<!-- <div class="container">
+<div class="row justify-content-end mt-2">
+  <div class="col-4">
+    <h4 class="text-center"><strong>Product Management</strong> </h4>
+  </div>
+  <div class="col-4 text-right mr-4">
+  <button type="button" class="btn btn-danger" routerLink="/">Logout</button>
+  </div>
+</div>
+</div> -->
+
+<div class="container mt-3">
+  <div class="row">
+    <div class="col-sm ml-4">
+      <button type="button" class="btn btn-success" routerLink="/chart">Chart View</button>
+    </div>
+    <div class="col-sm">
+      <h4 class="text-center"><strong>Product Management</strong> </h4>
+    </div>
+    <div class="col-sm text-right mr-4">
+      <button type="button" class="btn btn-danger" routerLink="/">Logout</button>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="card mt-3">
+    <div class="card-body">
+<div class="d-flex justify-content-between">
+  <h4>Product List</h4>
+  <button class="btn btn-outline-primary btn-sm" routerLink="/add">Add New Product</button>
+</div>
+<div class="row justify-content-center">
+  <div class="input-group mb-4 col-sm-5">
+    <div class="input-group-prepend">
+      <div class="input-group-text"><i class="fa fa-search" aria-hidden="true"></i></div>
+    </div>
+    <input type="text" class="form-control" name="searchKey"  placeholder="Search..." [(ngModel)]="searchKey">
+  </div>
+  </div>
+<table class="table table-hover">
+  <thead>
+<tr>
+  <th>Id</th>
+  <th (click)="sort('category')">Category</th>
+  <th (click)="sort('name')">Name
+    <i class="fa" [ngClass]="{'fa-sort-asc':!reverse,'fa-sort-desc':reverse}" aria-hidden="true"></i>
+  </th>
+  <th (click)="sort('description')">Description
+    <i class="fa" [ngClass]="{'fa-sort-asc':!reverse,'fa-sort-desc':reverse}" aria-hidden="true"></i>
+  </th>
+  <th (click)="sort('price')">Price
+    <i class="fa" [ngClass]="{'fa-sort-asc':!reverse,'fa-sort-desc':reverse}" aria-hidden="true"></i>
+  </th>
+  <th>Actions</th>
+</tr>
+  </thead>
+  <tbody>
+<tr *ngFor="let pro of products |orderBy:key:reverse | filter:searchKey | paginate:{itemsPerPage:2,currentPage:pageNo}">
+  <td>{{pro.id}}</td>
+  <td>{{pro.category}}</td>
+  <td>{{pro.name}}</td>
+  <td>{{pro.description}}</td>
+  <td>{{pro.price}}</td>
+  <td>
+    <a class="btn btn-primary btn-sm" [routerLink]="['/edit/',pro.id]">Edit</a> | <a class="btn btn-danger btn-sm text-white" (click)="deletePro(pro.id)">Delete</a>
+  </td>
+</tr>
+  </tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="text-right mr-5 mt-2">
+<pagination-controls (pageChange)="pageNo=$event"></pagination-controls>
+</div>

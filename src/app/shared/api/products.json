@@ -1,0 +1,25 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "BMW",
+      "name": "BMW X5",
+      "description": "BMW X5 price in India starts at Rs. 82 lakh for petrol variant.",
+      "price": 8200000
+    },
+    {
+      "id": 2,
+      "category": "Swift",
+      "name": "Swift desire",
+      "description": "Swift price in India starts at Rs. 52 lakh for petrol variant.",
+      "price": 5200000
+    },
+    {
+      "id": 3,
+      "category": "Range Rover",
+      "name": "Range Rover Sport",
+      "description": "good budget car",
+      "price": 1200000
+    }
+  ]
+}

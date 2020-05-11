@@ -1,0 +1,36 @@
+<div class="backdrop"></div>
+<div class="alert-box">
+<h4 class="text-center font-weight-bold">GROCERY DELIVERY APPLICATION</h4>
+<div class="card shadow">
+    <div class="card-header bg-success  text-center font-weight-bold text-white">Login</div>
+    <div class="card-body">
+
+<form class="text-secondary" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+
+    <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" class="form-control" name="uemail" #uemail="ngModel" ngModel required email>
+    </div>
+    <div class="alert alert-danger" *ngIf="uemail.invalid && uemail.touched">
+      <div *ngIf="uemail.errors.required">Please enter email</div>
+      <div *ngIf="uemail.errors.email">Please enter valid email</div>
+          </div>
+    <div class="form-group">
+        <label for="pwd">Password</label>
+        <input type="password" id="pwd" class="form-control" name="upwd" #upwd="ngModel" ngModel required minlength="6">
+    </div>
+    <div class="alert alert-danger" *ngIf="upwd.invalid && upwd.touched">
+      <div *ngIf="upwd.errors.required">Please enter password</div>
+      <div *ngIf="upwd.errors.minlength">Password must be atleast 6 characters</div>
+          </div>
+    <div class="form-group text-center mt-4">
+        <button type="submit" class="btn btn-primary btn-block" [disabled]="!loginForm.valid">Login</button>
+        <p>Not a member? <strong style="cursor:pointer" class="text-dark" routerLink="/">SignUp</strong> </p>
+    </div>
+
+</form>
+
+    </div>
+</div>
+</div>
+
