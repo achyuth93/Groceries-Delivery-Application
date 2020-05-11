@@ -14,10 +14,11 @@ import {NgxPaginationModule} from 'ngx-pagination'
 import {OrderModule} from 'ngx-order-pipe'
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProductBarChartComponent } from './product-bar-chart/product-bar-chart.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 
 @NgModule({
-  declarations: [SignupComponent, EditProductComponent, ProductListComponent, AddProductComponent, ProductChartComponent, LoginComponent, ProductBarChartComponent],
+  declarations: [SignupComponent, EditProductComponent, ProductListComponent, AddProductComponent, ProductChartComponent, LoginComponent, ProductBarChartComponent, InventoryComponent],
   imports: [
     CommonModule,
     ProductCrudRoutingModule,

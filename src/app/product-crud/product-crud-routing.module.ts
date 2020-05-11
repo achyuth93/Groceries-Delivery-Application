@@ -7,11 +7,12 @@ import { AddProductComponent } from './add-product/add-product.component';
 import { LoginComponent } from './login/login.component';
 import { ProductChartComponent } from './product-chart/product-chart.component';
 import { ProductBarChartComponent } from './product-bar-chart/product-bar-chart.component';
+import { InventoryComponent } from './inventory/inventory.component';
 
 
 const routes: Routes = [
   {path:'',component:SignupComponent},
-  {path:'products',component:ProductListComponent},
+  {path:'products',component:InventoryComponent},
   {path:'add',component:AddProductComponent},
   {path:'edit/:id',component:EditProductComponent},
   {path:'login',component:LoginComponent},
