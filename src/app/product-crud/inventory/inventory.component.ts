@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./inventory.component.css']
 })
 export class InventoryComponent implements OnInit {
-  samsungPhones=[{img:"../../assets/samsung.jpg",name:"Samsung Galaxy A10",description:"best android mobile",price:12000,quantity:0},
-  {img:"../../assets/samsung3.jpg",name:"Samsung Galaxy M31",description:"best Budget mobile",price:19000,quantity:0},
-  {img:"../../assets/samsung.jpg",name:"Samsung Galaxy A71",description:"best Camera mobile",price:22000,quantity:0},
-  {img:"../../assets/samsung3.jpg",name:"Samsung Galaxy S20",description:"best Gaming mobile",price:31000,quantity:0},
-  {img:"../../assets/samsung.jpg",name:"Samsung Galaxy A51",description:"best Battery mobile",price:42000,quantity:0},
-  {img:"../../assets/samsung.jpg",name:"Samsung Galaxy Note 10",description:"Latest Oxygen OS mobile",price:78000,quantity:0}
+  samsungPhones=[{img:"../../assets/sonaMassori.jpg",name:"Sona Massori Premium",description:"best quality rice",price:60,quantity:0},
+  {img:"../../assets/basmatiRice.jpg",name:"Special Basmati Rice",description:"best for biriyani",price:58,quantity:0},
+  {img:"../../assets/brownRice.jpg",name:"Healthy Brown Rice",description:"stay fit & healthy",price:75,quantity:0},
+  {img:"../../assets/basmatiRice.jpg",name:"Ponni Raw Rice",description:"Less calories",price:68,quantity:0},
+  {img:"../../assets/brownRice.jpg",name:"Pulav Rice",description:"biriyani special rice",price:42,quantity:0},
+  {img:"../../assets/sonaMassori.jpg",name:"Dosa Rice",description:"good for soft dosa",price:80,quantity:0}
 ]
 
 
