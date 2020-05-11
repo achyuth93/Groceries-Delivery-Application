@@ -8,10 +8,16 @@ import { LoginComponent } from './login/login.component';
 import { ProductChartComponent } from './product-chart/product-chart.component';
 import { ProductBarChartComponent } from './product-bar-chart/product-bar-chart.component';
 import { InventoryComponent } from './inventory/inventory.component';
+import { HomeComponent } from './home/home.component';
+import { PulsesComponent } from './pulses/pulses.component';
+import { OilsComponent } from './oils/oils.component';
 
 
 const routes: Routes = [
   {path:'',component:SignupComponent},
+  {path:'home',component:HomeComponent},
+  {path:'pulses',component:PulsesComponent},
+  {path:'oils',component:OilsComponent},
   {path:'products',component:InventoryComponent},
   {path:'add',component:AddProductComponent},
   {path:'edit/:id',component:EditProductComponent},

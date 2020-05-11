@@ -15,10 +15,14 @@ import {OrderModule} from 'ngx-order-pipe'
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { ProductBarChartComponent } from './product-bar-chart/product-bar-chart.component';
 import { InventoryComponent } from './inventory/inventory.component';
+import { CarouselModule } from 'ngx-bootstrap/carousel';
+import { HomeComponent } from './home/home.component';
+import { PulsesComponent } from './pulses/pulses.component';
+import { OilsComponent } from './oils/oils.component';
 
 
 @NgModule({
-  declarations: [SignupComponent, EditProductComponent, ProductListComponent, AddProductComponent, ProductChartComponent, LoginComponent, ProductBarChartComponent, InventoryComponent],
+  declarations: [SignupComponent, EditProductComponent, ProductListComponent, AddProductComponent, ProductChartComponent, LoginComponent, ProductBarChartComponent, InventoryComponent, HomeComponent, PulsesComponent, OilsComponent],
   imports: [
     CommonModule,
     ProductCrudRoutingModule,
@@ -27,7 +31,8 @@ import { InventoryComponent } from './inventory/inventory.component';
     Ng2SearchPipeModule,
     NgxPaginationModule,
     OrderModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    CarouselModule.forRoot()
   ],
   exports:[SignupComponent, EditProductComponent]
 })
