@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pulses.component.css']
 })
 export class PulsesComponent implements OnInit {
-  samsungPhones=[{img:"../../assets/sonaMassori.jpg",name:"Sona Massori Premium",description:"best quality rice",price:60,quantity:0},
-  {img:"../../assets/basmatiRice.jpg",name:"Special Basmati Rice",description:"best for biriyani",price:58,quantity:0},
-  {img:"../../assets/brownRice.jpg",name:"Healthy Brown Rice",description:"stay fit & healthy",price:75,quantity:0},
-  {img:"../../assets/basmatiRice.jpg",name:"Ponni Raw Rice",description:"Less calories",price:68,quantity:0},
-  {img:"../../assets/brownRice.jpg",name:"Pulav Rice",description:"biriyani special rice",price:42,quantity:0},
-  {img:"../../assets/sonaMassori.jpg",name:"Dosa Rice",description:"good for soft dosa",price:80,quantity:0}
+  samsungPhones=[{img:"../../assets/moongdal.jpg",name:"Moong Dal Premium",description:"best quality dal",price:60,quantity:0},
+  {img:"../../assets/peanuts.jpg",name:"Peanuts",description:"healthy and tasty",price:58,quantity:0},
+  {img:"../../assets/uraddal.jpg",name:"Healthy Uraddal",description:"stay fit & healthy",price:75,quantity:0},
+  {img:"../../assets/peanuts.jpg",name:"Peanuts Royal",description:"Less calories",price:68,quantity:0},
+  {img:"../../assets/uraddal.jpg",name:"Premium Uraddal",description:"oraganic farmed dal",price:42,quantity:0},
+  {img:"../../assets/moongdal.jpg",name:"Graded Moongdal",description:"good for healthy lifestyle",price:80,quantity:0}
 ]
 
 

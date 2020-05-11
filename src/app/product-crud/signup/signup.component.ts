@@ -41,7 +41,7 @@ export class SignupComponent implements OnInit {
       if(data[0]){
         console.log(data)
         this.modalRef.hide()
-        this.router.navigate(['products'])
+        this.router.navigate(['home'])
       }
     }
     )

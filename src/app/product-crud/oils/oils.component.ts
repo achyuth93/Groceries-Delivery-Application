@@ -6,12 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./oils.component.css']
 })
 export class OilsComponent implements OnInit {
-  samsungPhones=[{img:"../../assets/sonaMassori.jpg",name:"Sona Massori Premium",description:"best quality rice",price:60,quantity:0},
-  {img:"../../assets/basmatiRice.jpg",name:"Special Basmati Rice",description:"best for biriyani",price:58,quantity:0},
-  {img:"../../assets/brownRice.jpg",name:"Healthy Brown Rice",description:"stay fit & healthy",price:75,quantity:0},
-  {img:"../../assets/basmatiRice.jpg",name:"Ponni Raw Rice",description:"Less calories",price:68,quantity:0},
-  {img:"../../assets/brownRice.jpg",name:"Pulav Rice",description:"biriyani special rice",price:42,quantity:0},
-  {img:"../../assets/sonaMassori.jpg",name:"Dosa Rice",description:"good for soft dosa",price:80,quantity:0}
+  samsungPhones=[{img:"../../assets/cowghee.jpg",name:"Cow Ghee",description:"best quality ghee",price:160,quantity:0},
+  {img:"../../assets/mustardoil.jpg",name:"Mustard Oil",description:"best for cooking",price:158,quantity:0},
+  {img:"../../assets/saffolagold.jpg",name:"Saffola Gold Oil",description:"stay fit & healthy",price:175,quantity:0},
+  {img:"../../assets/mustardoil.jpg",name:"Premium Mustard Oil",description:"Less calories",price:168,quantity:0},
+  {img:"../../assets/saffolagold.jpg",name:"Saffola Platinum",description:"biriyani special oil",price:142,quantity:0},
+  {img:"../../assets/cowghee.jpg",name:"Natural Cow Ghee",description:"good for healthy skin",price:180,quantity:0}
 ]
 
 
